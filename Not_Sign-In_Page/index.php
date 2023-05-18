@@ -1,10 +1,17 @@
+<?php
+
+require('formHandler.php');
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-In</title>
+    <title>Create Your Profile</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -19,22 +26,22 @@
 
     <div id="center-div">
 
-        <h1>Create New Account</h1>
-        <h3>Already Registered? Login</h3>
+        <h1>Create Your Account</h1>
+        <h3>Already have one? Just <~Login~></h3>
 
-        <form method="POST" id="center-form">
+        <form action="" method="POST" id="center-form">
 
             <label for="name">Name</label>
             <input type="text" name="name" id="name" class="sign-in-inputs">
 
             <label for="email">Email</label>
-            <input type="text" name="email" id="name" class="sign-in-inputs">
+            <input type="text" name="email" id="email" class="sign-in-inputs">
 
             <label for="password">Password</label>
             <input type="password" name="password" id="password" class="sign-in-inputs">
 
             <label for="dob">Date of Birth</label>
-            <select name="dates" id="dates" class="sign-in-inputs">
+            <select name="dob" id="dob" class="sign-in-inputs">
                 <option value="opt1">Select</option>
                 <option value="opt2">Your</option>
                 <option value="opt3">Date</option>
@@ -42,7 +49,7 @@
                 <option value="opt5">Birth</option>
             </select>
 
-            <button id="sign-in-button">Sign In</button>
+            <button type="submit" name="complete-your-profile-button">Complete Your Profile</button>
 
     </form>
 

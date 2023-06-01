@@ -34,24 +34,21 @@ require('formHandler.php');
             <label for="name">Name</label>
             <input type="text" name="name" id="name" class="sign-in-inputs">
 
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname" class="sign-in-inputs">
+
             <label for="email">Email</label>
             <input type="text" name="email" id="email" class="sign-in-inputs">
+
+            <label for="student-no">Student Number</label>
+            <input type="text" name="student-no" id="student-no" class="sign-in-inputs">
 
             <label for="password">Password</label>
             <input type="password" name="password" id="password" class="sign-in-inputs">
 
-            <label for="dob">Date of Birth</label>
-            <select name="dob" id="dob" class="sign-in-inputs">
-                <option value="opt1">Select</option>
-                <option value="opt2">Your</option>
-                <option value="opt3">Date</option>
-                <option value="opt4">Of</option>
-                <option value="opt5">Birth</option>
-            </select>
-
             <button type="submit" name="complete-your-profile-button">Complete Your Profile</button>
 
-    </form>
+        </form>
 
     </div>
     

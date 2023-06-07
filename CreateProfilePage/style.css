@@ -1,0 +1,135 @@
+body {
+    background: linear-gradient(to top, #719de9, #d978df);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+.container {
+    width: 90%;
+    margin: 10px auto;
+  }
+  
+  .slider {
+    border: none;
+    background: linear-gradient(to top, #2b74f1, #ca1dd3);
+    border-radius: 20px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    height: 100%;
+    display: flex;
+    width: 1000%;
+    transition: transform 1s ease-in-out;
+    position: relative; 
+  }
+  
+  .slide section {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navigation {
+    position: absolute; 
+    top: 50%; 
+    left: 10px; 
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navigation button {
+    margin-bottom: 10px; 
+  }
+
+  /* image animations */
+
+  .slide .image {
+    width: 270px;
+    height: auto;
+    margin-left: 70px;
+    animation: slideAnimation 7s infinite;
+  }
+  
+  @keyframes slideAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-25%);
+    }
+    50% {
+      transform: translateY(50%);
+    }
+  }
+
+section .residence {
+    width: 120px;
+    height: auto;
+}
+  
+.info {
+    text-align: center;
+    margin-left: 60px;
+}
+
+ h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+.navigation button, .submit button {
+    border: none;
+    outline: none;
+    background:linear-gradient(to top, #f478d3, #04c4ef);
+    padding: 10px 20px;
+    font-size: 18px;
+    color: aliceblue;
+    cursor: pointer;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.navigation button:hover, .submit button:hover {
+    background: linear-gradient(to bottom, #0d94cd, #d31dc4);
+}
+
+.section-10 label {
+  margin: 20px;
+}
+
+.slide .submit-button {
+  margin-top: 100px;
+}
+
+.stay {
+  margin: 20px;
+}
+
+.other-text_area {
+  display: block;
+  margin-top: 10px;
+}
+
+.other-text_area input {
+  color: aliceblue;
+  background-color: #d27ad7;
+  font-size: 18px;
+  border: #ca1dd3;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 5px;
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  outline: #04c4ef;
+}
+
+.other-text_area input[type="text"]::placeholder {
+  color: white;
+}

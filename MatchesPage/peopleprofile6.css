@@ -1,0 +1,65 @@
+.goback {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: font-size 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(141, 137, 137);
+}
+
+.goback:hover {
+    font-size: 28px;
+}
+
+
+img{
+    height: 450px;
+    width: 450px;
+    border: solid rgb(141, 183, 180) 24px;
+    margin-top: 30px;
+}
+
+.part1{
+    margin-left: 50px;
+}
+
+.part2{
+    height: 650px;
+    width: 650px;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    font-size: 18px;  
+    color: rgb(14, 18, 41) ;   
+}
+
+
+body{
+    background-color: rgb(197, 227, 222);
+    color: rgb(14, 18, 41) ;
+    
+}
+
+h2{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:  rgb(14, 18, 41);
+}
+
+span{
+    color:rgb(197, 227, 222) ;
+
+}

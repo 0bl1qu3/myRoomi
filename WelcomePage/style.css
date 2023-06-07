@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+}
+.holder{
+    position: relative;
+    margin-top: 0%;
+}
+.image_container{
+    width: 100%;
+    background-color: aqua;
+    margin-left: 100%;
+    background-image: url(welcome.png);
+    height: 1000px;
+    margin-top: 0%;
+    
+}
+.paragraph{
+    width: 50%;
+    margin-right: 20%;
+    margin-top: 0%;
+    position: relative;
+    top: 0%;
+    height: 1000px;
+    background-image:linear-gradient(to right,#3300cc, #9900cc);
+}
+.paragraph #para1{
+    position: absolute;
+    top: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    
+}
+#button1{
+    padding: 10px 13px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 20px;    width: 100px;
+    background-image:linear-gradient(to right, rgb(170, 35, 223),orange);
+}
+#button2{
+    padding: 10px 5px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 100px;
+    background-image:linear-gradient(to right, rgb(170, 35, 223), orange);
+}
+
+button{
+    display: flex;
+    justify-content: center;
+}
+
+
+nav{
+    position: absolute;
+    left: 84%;
+}
+nav ul{
+    list-style: none;
+    display: flex; 
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+h1 {
+    position: absolute;
+    top: 9%;
+    margin-left: 10%;
+    font-size: 200px;
+    color: white;
+    font-family: sans-serif;
+}
+h2{
+    position: absolute;
+    top: 1%;
+    margin-left: 40%;
+    font-size: 80px;
+    color: white;
+    font-family: sans-serif;
+}
+#logo{
+    margin-top: 0%;
+    width:250px ;
+    height:250px ;
+    position: absolute;
+    top: -2%;
+    mix-blend-mode: multiply;
+    
+}

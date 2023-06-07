@@ -1,0 +1,49 @@
+/*SIDEPAN transition*/
+.img-box img {
+  margin-left: 0px;
+  -webkit-transition: margin 1s ease;
+     -moz-transition: margin 1s ease;
+       -o-transition: margin 1s ease;
+      -ms-transition: margin 1s ease;
+          transition: margin 1s ease;
+}
+ 
+.img-box img:hover {
+  margin-left: -200px;
+}
+
+/*Special effects*/
+
+body .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  animation: 3s linear 0s infinite normal none running animate;
+}
+
+body .img-box {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img-box {
+  height: 400px;
+  width: auto;
+}
+
+div {
+  display: block;
+}
+
+@keyframes animate{
+0% {
+  filter: hue-rotate(0deg);
+}
+100% {
+  filter: hue-rotate(360deg);
+}
+}

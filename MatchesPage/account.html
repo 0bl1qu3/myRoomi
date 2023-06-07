@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my account</title>
+    <link rel="stylesheet" href="styleMyAccountPage.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="logoMyRoomi.png"> 
+        
+        <nav class="navbar">
+            <a href="../HomePage/home.php" style="--i:1;">Home</a>
+            <a href="AboutUsPage/moreaboutUs.html" style="--i:2;">About Us</a>
+            <a href="#" style="--i:3;">Help</a>
+            <a href="matches" style="--i:4;">Matches</a>
+            <a href="../AccountPage/account.php" style="--i:5;" class="active">Account</a>
+            <a href="../SignUpPage/index.php" style="--i:7;">Logout</a>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <div class="profile-content">
+            <h3 style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">ABOUT ME</h3>
+            <hr>
+            <p class="mb-0"><strong class="pr-1">Full Name:</strong>HOPE Dube</p> 
+            <hr>          
+            <p class="mb-0"><strong class="pr-1">Qualification:</strong> Business Information Technology</p> 
+            <hr>
+            <p class="mb-0"><strong class="pr-1">Gender:</strong> F</p> 
+            <hr>
+            <p class="mb-0"><strong class="pr-1">Location:</strong> UJ Auckland Park Bunting</p> 
+            <hr>
+            <p class="mb-0"><strong class="pr-1">Bio/Description:</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Earum obcaecati nisi minima quis voluptate ratione. 
+                Aut voluptatum modi pariatur porro fugiat officiis quia fugit eligendi odit deserunt, 
+                eaque distinctio? Minus! </p>
+                <hr>
+            <p class="mb-0"><strong class="pr-1">Interests/Hobbies:</strong>I love experiencing new cultures and trying new cuisines</p> 
+            <hr>
+            <p class="mb-0"><strong class="pr-1">Preferences and Compatibility:</strong>Looking for a roommate who is easygoing, respectful.</p> 
+            <hr>
+            <p class="mb-0"><strong class="pr-1">Compatibility Factors:</strong> I prefer a clean and organized living space and appreciate roommates who clean up after themselves. I'm a non-smoker.</p> 
+             
+        </div>
+
+        <div class="profile-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="avatar.jpg" alt="profilePic">  
+                </div>
+            </div>
+            <div class="file btn" style="text-align: center;" onclick="openFilePicker()">Change photo</div> 
+            <input type="file" id="filePicker" style="display: none;">
+        </div>
+    </section>
+
+    <script>
+
+        function openFilePicker() {
+            var filePicker = document.getElementById('filePicker');
+            filePicker.click();
+        }
+    </script>
+</body>
+</html>

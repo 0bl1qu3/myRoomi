@@ -1,0 +1,65 @@
+/* headsection css */
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+    background: linear-gradient(to top, aliceblue, #9d70e6);
+  }
+  
+  .logo {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    height: 150px;
+    width: auto;
+    mix-blend-mode: multiply;
+  }
+  
+  .logo img a:hover{
+    height: 200px;
+    width: 140px;
+    box-shadow: 4px 4px 8px #c258a0;
+  }
+
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar ul li a {
+    color: rgb(155, 38, 155);
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #5f13c9;
+    text-decoration: underline;
+    text-shadow: #5f13c9;
+    font-size: 22px;
+  }
+
+  

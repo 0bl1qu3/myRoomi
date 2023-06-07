@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap");
+  :root {
+      --m-01: #f06;
+      --m-02: #3cf;
+      --m-03: #f06;
+      --g-01: linear-gradient(95deg, var(--m-01), var(--m-02));
+ }
+  body {
+      margin: 0;
+      padding: 0;
+      height: auto;
+      font-family: "Barlow", sans-serif;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 700% 700%;
+      animation: gradient 15s ease infinite;
+      overflow-x: hidden;
+  }
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+ .right {
+    flex: 3;
+    padding: 20px;
+ }
+ 
+ 
+ .form-group {
+    margin-bottom: 20px;
+ }
+ 
+ label {
+    display: block;
+    font-size: var(--m);
+    margin-bottom: 5px;
+ }
+ 
+ input[type="text"],
+ input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    font-size: var(--m);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: #f06;
+ }
+ 
+ button {
+    padding: 10px 20px;
+    font-size: var(--m);
+    background: var(--m-01);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+ 
+ button:hover {
+    background: var(--m-02);
+ }
+ 
+ .active {
+    background: var(--m-02);
+ }
+ 
+ @media screen and (max-width: 768px) {
+    .settings_modal {
+       width: 90%;
+    }
+ }
+  .wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0 40px;
+      box-sizing: border-box;
+ }
+  @media screen and (max-width: 799px) {
+      .wrapper {
+          padding: 0;
+     }
+ }
+  .container {
+      max-width: 870px;
+      width: 100%;
+      min-height: 500px;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      transition: all 0.4s ease;
+ }
+  @media screen and (max-width: 799px) {
+      .container {
+          height: 100%;
+          margin-top: 0px;
+          margin-bottom: 0px;
+     }
+ }
+  .settings_modal {
+      display: flex;
+      background: #343549;
+      height: 100%;
+      width: 100%;
+      border-radius: 6px;
+ }
+  @media screen and (max-width: 799px) {
+      .settings_modal {
+          border-radius: 0px;
+     }
+ }
+  .left {
+      background: #454660;
+      width: 100%;
+      max-width: 220px;
+      transition: all 0.6s 0.2s ease;
+      box-shadow: 10px 0px 34px rgba(0, 0, 0, 0.21);
+      border-radius: 6px 0px 0px 6px;
+      z-index: 2;
+ }
+  @media screen and (max-width: 799px) {
+      .left {
+          max-width: 50px;
+          position: absolute;
+          border-radius: 0px;
+          height: 100%;
+     }
+      .left:before {
+          content: '';
+          position: absolute;
+          background: #292a3a;
+          width: 0;
+          height: 100%;
+          left: 100%;
+          border-radius: 3px 0px 0px 3px;
+          transition: all 0.6s ease;
+          opacity: 0.8;
+     }
+ }
+  .icon {
+      width: 40px;
+      height: 40px;
+      display: none;
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      cursor: pointer;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      transition: all 0.4s ease;
+ }
+  .icon span {
+      position: absolute;
+      background-color: var(--m-03);
+      width: 24px;
+      height: 2px;
+      border-radius: 4px;
+      transition: all 0.4s ease;
+ }
+  .icon span:nth-child(1) {
+      transform: translateY(-8px);
+ }
+  .icon span:nth-child(3) {
+      transform: translateY(8px);
+ }
+  @media screen and (max-width: 799px) {
+      .icon {
+          display: flex;
+     }
+ }
+.links_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+ }
+.side_link {
+      width: calc(220px - 40px);
+      height: 40px;
+      display: flex;
+      align-items: center;
+      background-color: rgba(41, 42, 58, 0.5);
+      font-family: "Barlow", sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: var(--m);
+      letter-spacing: 0.09em;
+      padding: 0 20px;
+      box-sizing: border-box;
+      color: var(--m-03);
+      position: relative;
+      margin: 10px 0;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.4s 0s ease;
+      user-select: none;
+ }
+  .side_link span {
+      z-index: 1;
+ }
+  .side_link:before {
+      content: '';
+      position: absolute;
+      background: var(--g-01);
+      width: 3px;
+      height: 100%;
+      left: 0;
+      border-radius: 3px 0px 0px 3px;
+      transition: all 0.4s cubic-bezier(0.98, 0.04, 0.25, 1);
+ }
+  .side_link:hover {
+      color: white;
+ }
+  .side_link:hover:before {
+      width: 100%;
+      border-radius: 3px;
+ }
+  @media screen and (max-width: 799px) {
+      .side_link:hover {
+          color: var(--m-03);
+     }
+      .side_link:hover:before {
+          width: 3px;
+          border-radius: 3px 0px 0px 3px;
+     }
+ }
+  .side_link.active {
+      color: white;
+      width: 210px;
+      left: 15px;
+      box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.1);
+ }
+  .side_link.active:before {
+      width: 100%;
+      border-radius: 3px;
+ }
+  @media screen and (max-width: 799px) {
+      .side_link {
+          transform: translateX(-100%);
+          opacity: 0;
+     }
+ }
+ 
+  .links_container {
+      display: flex;
+ }
+
+  @keyframes select {
+      0% {
+          width: 100%;
+          height: 100%;
+     }
+      50% {
+          width: calc(100% + 5px);
+          height: calc(100% + 5px);
+     }
+      100% {
+          width: 100%;
+          height: 100%;
+     }
+ }
+ 
+  .right .title {
+      color: white;
+      font-size: var(--l);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      position: relative;
+      height: 40px;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+ }
+
+  

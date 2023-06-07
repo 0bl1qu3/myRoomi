@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MATCHES</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" >
+
+	<link href="styleMatchesPage.css" rel="stylesheet">
+</head>
+<body>
+	<header class="navbar">
+        <nav>
+            <a href="../HomePage/home.php" style="--i:1;">home</a>
+            <a href="../AboutUsPage/moreaboutUs.html" style="--i:2;">about us</a>
+            <a href="../HelpPage/hi.html" style="--i:3;">help</a>
+			<a href="../MatchesPage/matches.html" style="--i:4;" class="active">matches</a>
+            <a href="../AccountPage/account.php" style="--i:4;">my account</a>
+        </nav>
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+                <span class="mode-icons"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></span>
+            </label>
+        </div>
+
+    </header>
+		<div class="suggestion-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="matches-slider owl-carousel">
+							<div class="single-box text-center">
+                                <ion-slide ng-cloak class="content">
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation" src="girl1.JPG"></div>
+										<div>
+											<i class="friend-request far fa-user" id="friend-request"></i>
+										</div>
+                                    
+                                </ion-slide>
+								<div class="info-area">
+									<h4>Amanda Hedgton</h4>
+									<p>Hi, I'm Amanda! I'm a friendly and outgoing individual who loves exploring the city ...</p><a class="btn" href="peopleprofile1.html">Learn More</a>
+								</div>
+							</div>
+							<div class="single-box text-center">
+                                <ion-slide ng-cloak class="content">
+
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation" src="girl2.jpg"></div>
+									<div>
+										<i class="friend-request far fa-user" id="friend-request"></i>
+									</div>
+                                    
+                                </ion-slide>
+								<div class="info-area">
+									<h4>Sophia Nguyen</h4>
+									<p>Hello! I'm Sophia, a friendly and outgoing individual with a passion for adventure and creativity.</p><a class="btn" href="peopleprofile2.html">Learn More</a>
+								</div>
+							</div>
+							<div class="single-box text-center">
+                                <ion-slide ng-cloak class="content">
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation" src="girl3.jpg"></div>
+									<div>
+										<i class="friend-request far fa-user" id="friend-request"></i>
+									</div>
+                                    
+                                </ion-slide>
+                                <div class="info-area">
+									<h4>Olivia Ramirez</h4>
+									<p>Hey there! I'm Olivia, an outgoing and adventurous individual who loves exploring new cities.</p><a class="btn" href="peopleprofile3.html">Learn More</a>
+								</div>
+							</div>
+							<div class="single-box text-center">
+                                <ion-slide ng-cloak class="content">
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation" src="boy1.jpg"></div>
+									<div>
+										<i class="friend-request far fa-user" id="friend-request"></i>
+									</div>
+                                    
+                                </ion-slide>
+								<div class="info-area">
+									<h4>David Anderson</h4>
+									<p>Hey there! I'm David, a laid-back and easygoing guy who loves the Joburg lifestyle.</p><a class="btn" href="peopleprofile4.html">Learn More</a>
+								</div>
+							</div>
+							<div class="single-box text-center">
+                                <ion-slide ng-cloak class="content">
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation" src="boy2.jpg"></div>
+									<div>
+										<i class="friend-request far fa-user" id="friend-request"></i>
+									</div>
+                                    
+                                </ion-slide>
+								<div class="info-area">
+									<h4>Ethan Thompson</h4>
+									<p>Hey! I'm Ethan, a laid-back and friendly guy with a passion for music and technology.</p><a class="btn" href="peopleprofile5.html">Learn More</a>
+								</div>
+							</div>
+                            <div class="single-box text-center">
+                                <ion-slide ng-cloak class="content">
+                                    <div class="img-area"><img alt="" class="img-fluid move-animation" src="boy3.jpg"></div>
+									<div>
+										<i class="friend-request far fa-user" id="friend-request"></i>
+									</div>
+                                    
+                                </ion-slide>
+								<div class="info-area">
+									<h4>Benjamin Lee</h4>
+									<p>Hello there! I'm Benjamin, a friendly and easy-to-get-along-with guy who's passionate about outdoor...</p><a class="btn" href="peopleprofile6.html">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+	</script> 
+<script>
+    $(document).ready(function() {
+        $('.matches-slider').owlCarousel({
+            loop: true,            
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 450,
+            margin: 20,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                991: {
+                    items: 3
+                },
+                1200: {
+                    items: 3
+                },
+                1920: {
+                    items: 3
+                }
+            }
+        });
+
+        // Mute this out to avoid errors
+
+		/*$(".friend-request").click(function() {
+            sendFriendRequest();
+        });*/
+    });
+
+	function toggleDarkMode() {
+    const body = document.querySelector('body');
+    body.classList.toggle('dark-mode');
+	}
+	$(".friend-request").click(function() {
+    showSlideBox("Do you want to confirm the friend request or cancel?", function() {
+        
+        console.log("Friend request confirmed!");
+    }, function() {
+        
+        console.log("Friend request canceled!");
+    });
+});
+function showSlideBox(message, onConfirm, onCancel, toastMessage) {
+
+    const slideBox = document.createElement("div");
+    slideBox.className = "slide-box";
+    slideBox.innerHTML = `
+        <p class="message">${message}</p>
+        <div class="buttons">
+            <button class="confirm">Confirm</button>
+            <button class="cancel">Cancel</button>
+        </div>
+    `;
+    document.body.appendChild(slideBox);
+
+    setTimeout(() => {
+        slideBox.classList.add("show");
+    }, 100);
+
+    const confirmButton = slideBox.querySelector(".confirm");
+    const cancelButton = slideBox.querySelector(".cancel");
+
+    confirmButton.addEventListener("click", () => {
+        slideBox.classList.remove("show");
+        setTimeout(() => {
+            document.body.removeChild(slideBox);
+            if (typeof onConfirm === "function") {
+                onConfirm();
+            }
+        }, 300);
+    });
+
+    cancelButton.addEventListener("click", () => {
+        slideBox.classList.remove("show");
+        setTimeout(() => {
+            document.body.removeChild(slideBox);
+            if (typeof onCancel === "function") {
+                onCancel();
+            }
+        }, 300);
+    });
+}
+
+
+	const themeToggle = document.getElementById('themeToggle');
+	themeToggle.addEventListener('change', toggleDarkMode);
+
+</script>
+</body>
+</html>

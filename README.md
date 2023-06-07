@@ -1,2 +1,4 @@
 # myRoomi
-DSW Project: Will Add More Later
+DSW Project
+
+Roommate Matching Service
